@@ -13,3 +13,8 @@
 // save forecasts for area
 // can view saved forecasts
 
+let $ = require("jquery");
+
+function displayCurrent(){
+
+}
