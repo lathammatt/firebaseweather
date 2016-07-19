@@ -20,5 +20,19 @@ function getData (zip){
 	});
 };
 
+function userData (userId){
+	return new Promise (function(resolve, reject){
+		$.ajax({
+			url: `https://weatherexercise.firebaseio.com/weather.json?orderBy="uid"&equalTo="${userId}"`
+		}).done(function(savedData){
+			console.log("savedData", savedData);
+			resolve(savedData);
+		});
+	});
+};
 
-module.exports=getData;
+
+module.exports={
+	getData,
+	userData,
+};
