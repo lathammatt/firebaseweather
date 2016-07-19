@@ -7,16 +7,26 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<section>
+	<div class="container">
+		<div id="entry" class="row">
+			<button type="submit" id="auth">Login with Google</button>
+		</div>
 		
-		<div>
+		<div id="main">
 			<label for="zip">Enter Zip Code, 5-numerical digits only</label>
 			input
 			<input type="text" id="zip" name="zip" pattern="[0-9]" maxlength="5" value="" placeholder="Zip Code">
-			<button type="submit">Submit Zip Code</button>
+			<button type="submit" id="submit">Submit Zip Code</button>
 		</div>
-		
-	</section>
+		<div id="results">
+			
+		</div>
+		<div id="saved">
+			<p>Saved Forecasts</p>
+			
+		</div>
+
+	</div>
 	<!-- <script src="/dist/bundle.js" type="text/javascript" charset="utf-8" async defer></script> -->
 </body>
 </html>
